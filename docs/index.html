@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Obol (오볼) — POE2 한글 시세·제작·빌드 도구</title>
+<meta name="description" content="Path of Exile 2 카카오게임즈 서버용 한글 도구. 시세 조회, 보관함 현황, 가상 제작, 빌드 비교.">
+<meta property="og:title" content="Obol (오볼)">
+<meta property="og:description" content="POE2 한글 시세·보관함·제작·빌드 비교 도구. 설치 없이 exe 하나.">
+<meta property="og:image" content="home.png">
+<style>
+:root{--bg:#0d0a08;--panel:#17120d;--line:#3b2e1f;--fg:#e6dcc6;--dim:#9a8b73;--gold:#d4a85a;--btn:#8a5a1c;--btn2:#a8701f}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:"Noto Sans KR","Malgun Gothic",system-ui,sans-serif;line-height:1.65}
+.wrap{max-width:860px;margin:0 auto;padding:48px 20px 64px}
+h1{margin:0;font-size:40px;letter-spacing:.02em;color:var(--gold)}
+.sub{color:var(--dim);margin:6px 0 28px}
+.note{font-size:13px;color:var(--dim);border-left:3px solid var(--line);padding-left:12px;margin:0 0 28px}
+.dl{display:inline-block;background:var(--btn);color:#fff;text-decoration:none;font-weight:700;font-size:20px;padding:16px 34px;border-radius:6px;border:1px solid var(--gold)}
+.dl:hover{background:var(--btn2)}
+.small{display:block;font-size:13px;color:var(--dim);margin-top:10px}
+.shot{width:100%;border:1px solid var(--line);border-radius:6px;margin:34px 0 8px;display:block}
+h2{color:var(--gold);font-size:20px;margin:36px 0 10px}
+table{width:100%;border-collapse:collapse;font-size:15px}
+td{border-top:1px solid var(--line);padding:9px 6px;vertical-align:top}
+td:first-child{white-space:nowrap;color:var(--gold);font-weight:700;width:1%;padding-right:18px}
+ul{padding-left:20px;margin:0}li{margin:6px 0}
+a{color:var(--gold)}
+footer{margin-top:44px;font-size:12px;color:var(--dim);border-top:1px solid var(--line);padding-top:16px}
+@media(max-width:560px){h1{font-size:32px}.dl{display:block;text-align:center}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Obol <span style="font-size:22px;color:var(--dim)">오볼</span></h1>
+  <p class="sub">Path of Exile 2 (카카오게임즈) 한글 전용 시세 · 보관함 · 제작 · 빌드 비교 도구</p>
+  <p class="note">Korean (Kakao Games) server only. This tool does not support the global servers.</p>
+
+  <a class="dl" href="https://github.com/paylupin84/obol/releases/latest/download/Obol.exe">Obol 다운로드 (Windows)</a>
+  <span class="small">exe 파일 하나 · 설치 필요 없음 · 항상 최신 버전이 받아집니다</span>
+
+  <img class="shot" src="home.png" alt="Obol 홈 화면">
+
+  <h2>할 수 있는 것</h2>
+  <table>
+    <tr><td>Alt+D</td><td>게임에서 아이템에 마우스를 올리고 누르면 비슷한 매물 가격(시세) 조회. 줄에 마우스를 올리면 그 매물의 옵션이 보입니다.</td></tr>
+    <tr><td>Alt+B</td><td>빌드 연구소 — 유명 빌드(PoB 코드, pobb.in, poe.ninja 링크)를 가져와 내 빌드와 견주고, 맞출 옵션을 고르고 시세·제작으로 이어 갑니다.</td></tr>
+    <tr><td>Alt+C</td><td>가상 제작 시뮬레이터 — 접두·접미 모드를 가중치대로 뽑아 보고, 만든 아이템의 비슷한 매물 시세까지.</td></tr>
+    <tr><td>Alt+M / N</td><td>보관함 현황(내 매물 총 가치), 판매 현황</td></tr>
+    <tr><td>Alt+T / W</td><td>거래소 사이트에서 같은 검색 열기 / poe2db 에서 아이템 열기</td></tr>
+    <tr><td>F5</td><td>게임 안에서 /은신처 (설정에서 바꿀 수 있음)</td></tr>
+    <tr><td>탭</td><td>DPS 계산기, 필터 커스텀, 스킨 4종 + 내 스킨, 불편사항 보내기</td></tr>
+  </table>
+
+  <h2>처음 켤 때</h2>
+  <ul>
+    <li>게임이 관리자 권한이라 <b>관리자 권한 허용 창</b>이 뜹니다. '예'를 눌러 주세요.</li>
+    <li>윈도가 "알 수 없는 게시자" 경고를 보이면 <b>추가 정보 → 실행</b>을 누르세요(서명되지 않은 프로그램입니다).</li>
+    <li>보관함·판매 현황을 쓰려면 설정 탭에서 내 계정 이름(예: 이름#1234)을 한 번 입력하세요.</li>
+    <li>POE2 를 켜면 Obol 이 자동으로 켜지게 설정되어 있습니다(설정에서 끌 수 있음).</li>
+  </ul>
+
+  <h2>링크</h2>
+  <ul>
+    <li><a href="https://github.com/paylupin84/obol/releases/latest">최신 버전 페이지</a></li>
+    <li><a href="https://github.com/paylupin84/obol">GitHub 저장소</a></li>
+  </ul>
+
+  <footer>Obol 은 비공식 팬 도구이며 Grinding Gear Games, 카카오게임즈와 관계가 없습니다. 제작 시뮬레이터 데이터: <a href="https://poe2db.tw">poe2db.tw</a> (CC BY-NC-SA 3.0), 화폐 시세: <a href="https://poe.ninja">poe.ninja</a>. 후원은 도구 안의 ☕ 따뜻한 커피 한 잔에서 가능합니다(모든 기능은 무료).</footer>
+</div>
+</body>
+</html>

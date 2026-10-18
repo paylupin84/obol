@@ -8,7 +8,9 @@ Path of Exile 2 (카카오게임즈) 한글 전용 **시세 · 보관함 · 제�
 
 ## 다운로드
 
-**[Releases](../../releases/latest)** 에서 `Obol.exe` 를 받아 실행하면 됩니다. 설치는 필요 없습니다(파이썬도 필요 없음).
+**https://paylupin84.github.io/obol** 에서 버튼 하나로 받을 수 있습니다. 설치는 필요 없습니다(파이썬도 필요 없음).
+
+직접 받기: [Obol.exe](https://github.com/paylupin84/obol/releases/latest/download/Obol.exe) · [최신 버전 페이지](https://github.com/paylupin84/obol/releases/latest)
 
 ## 할 수 있는 것
 

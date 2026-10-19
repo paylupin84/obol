@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Obol (오볼) — POE2 한글 시세·제작·빌드 도구</title>
-<meta name="description" content="Path of Exile 2 카카오게임즈 서버용 한글 도구. 시세 조회, 보관함 현황, 가상 제작, 빌드 비교.">
+<title>Obol (오볼) — 카카오 POE2 한글 시세 조회기</title>
+<meta name="description" content="카카오게임즈 Path of Exile 2 서버용 한글 시세 조회기. 아이템에 마우스를 올리고 Alt+D.">
 <meta property="og:title" content="Obol (오볼)">
-<meta property="og:description" content="POE2 한글 시세·보관함·제작·빌드 비교 도구. 설치 없이 exe 하나.">
+<meta property="og:description" content="아이템에 마우스를 올리고 Alt+D — 한글 그대로 카카오 거래소 시세. 무료, exe 하나.">
 <meta property="og:image" content="home.png">
 <style>
 :root{--bg:#0d0a08;--panel:#17120d;--line:#3b2e1f;--fg:#e6dcc6;--dim:#9a8b73;--gold:#d4a85a;--btn:#8a5a1c;--btn2:#a8701f}
@@ -26,47 +26,56 @@ td{border-top:1px solid var(--line);padding:9px 6px;vertical-align:top}
 td:first-child{white-space:nowrap;color:var(--gold);font-weight:700;width:1%;padding-right:18px}
 ul{padding-left:20px;margin:0}li{margin:6px 0}
 a{color:var(--gold)}
-footer{margin-top:44px;font-size:12px;color:var(--dim);border-top:1px solid var(--line);padding-top:16px}
+details{border-top:1px solid var(--line);padding:10px 0}summary{cursor:pointer;color:var(--gold);font-weight:700}details p{margin:8px 0 0;color:var(--fg)}.warn{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:12px 14px;font-size:14px;margin:26px 0 0}.hash{font-family:Consolas,monospace;font-size:12px;color:var(--dim);word-break:break-all;margin-top:6px}footer{margin-top:44px;font-size:12px;color:var(--dim);border-top:1px solid var(--line);padding-top:16px}
 @media(max-width:560px){h1{font-size:32px}.dl{display:block;text-align:center}}
 </style>
 </head>
 <body>
 <div class="wrap">
   <h1>Obol <span style="font-size:22px;color:var(--dim)">오볼</span></h1>
-  <p class="sub">Path of Exile 2 (카카오게임즈) 한글 전용 시세 · 보관함 · 제작 · 빌드 비교 도구</p>
+  <p class="sub" style="margin:2px 0 6px">(Obol: 고대 그리스에서 죽은 이의 입에 물려 저승 뱃사공 카론에게 건네던 동전 — 곧 <b>노잣돈</b>)</p>
+  <p class="sub">카카오 POE2를 위한 한글 시세 조회기 — 아이템에 마우스를 올리고 <b>Alt+D</b></p>
   <p class="note">Korean (Kakao Games) server only. This tool does not support the global servers.</p>
 
   <a class="dl" href="https://github.com/paylupin84/obol/releases/latest/download/Obol.exe">Obol 다운로드 (Windows)</a>
-  <span class="small">exe 파일 하나 · 설치 필요 없음 · 항상 최신 버전이 받아집니다</span>
+  <span class="small">exe 파일 하나 · 설치 필요 없음 · 무료 · 항상 최신 버전이 받아집니다</span>
+  <div class="hash">SHA-256 (v0.9.4): 3e9241e3cb590a79cdf60f42c295d9cdcbf975f6449efb53d3e6601eea16a78b</div>
 
-  <img class="shot" src="home.png" alt="Obol 홈 화면">
+  <img class="shot" src="home.png" alt="Obol 화면">
 
-  <h2>할 수 있는 것</h2>
+  <h2>이런 도구입니다</h2>
   <table>
-    <tr><td>Alt+D</td><td>게임에서 아이템에 마우스를 올리고 누르면 비슷한 매물 가격(시세) 조회. 줄에 마우스를 올리면 그 매물의 옵션이 보입니다.</td></tr>
-    <tr><td>Alt+B</td><td>빌드 연구소 — 유명 빌드(PoB 코드, pobb.in, poe.ninja 링크)를 가져와 내 빌드와 견주고, 맞출 옵션을 고르고 시세·제작으로 이어 갑니다.</td></tr>
-    <tr><td>Alt+C</td><td>가상 제작 시뮬레이터 — 접두·접미 모드를 가중치대로 뽑아 보고, 만든 아이템의 비슷한 매물 시세까지.</td></tr>
+    <tr><td>Alt+D</td><td><b>시세 조회.</b> 게임에서 아이템에 마우스를 올리고 누르면 한글 그대로 카카오 거래소의 비슷한 매물 가격이 게임 위에 뜹니다. 줄에 마우스를 올리면 그 매물의 옵션, 클릭하면 내 아이템과 나란히 비교합니다.</td></tr>
+    <tr><td>Alt+C</td><td>가상 제작 — 접두·접미를 가중치대로 뽑아 보고, 만든 아이템의 비슷한 매물 시세까지 봅니다.</td></tr>
+    <tr><td>Alt+B</td><td>빌드 연구소 — PoB 코드·pobb.in·poe.ninja 링크의 유명 빌드를 내 빌드와 견주고, 맞출 옵션을 골라 시세·제작으로 이어 갑니다. 액체 감정 찾기도 있습니다.</td></tr>
     <tr><td>Alt+M / N</td><td>보관함 현황(내 매물 총 가치), 판매 현황</td></tr>
-    <tr><td>Alt+T / W</td><td>거래소 사이트에서 같은 검색 열기 / poe2db 에서 아이템 열기</td></tr>
-    <tr><td>F5</td><td>게임 안에서 /은신처 (설정에서 바꿀 수 있음)</td></tr>
-    <tr><td>탭</td><td>DPS 계산기, 필터 커스텀, 스킨 4종 + 내 스킨, 불편사항 보내기</td></tr>
+    <tr><td>그 밖에</td><td>DPS 계산기, 필터 커스텀(Alt+F), 대기 화면, 스킨, 불편사항 보내기</td></tr>
   </table>
+
+  <p class="warn"><b>꼭 읽어 주세요.</b> Obol 은 비공식 팬 도구입니다. 게임에는 아이템 복사 키(Ctrl+C)만 보내고 게임 파일·메모리는 읽거나 고치지 않지만, Grinding Gear Games 나 카카오게임즈가 허용한다는 확인은 받지 못했습니다. <b>계정 안전을 보장하지 않으며 사용은 본인 책임입니다.</b></p>
 
   <h2>처음 켤 때</h2>
   <ul>
-    <li>게임이 관리자 권한이라 <b>관리자 권한 허용 창</b>이 뜹니다. '예'를 눌러 주세요.</li>
-    <li>윈도가 "알 수 없는 게시자" 경고를 보이면 <b>추가 정보 → 실행</b>을 누르세요(서명되지 않은 프로그램입니다).</li>
+    <li>게임이 관리자 권한이라 Obol 도 <b>관리자 권한 허용 창</b>을 띄웁니다. '예'를 눌러 주세요.</li>
+    <li>윈도가 "알 수 없는 게시자" 경고를 보일 수 있습니다. 서명하지 않은 개인 제작 프로그램이라 그렇습니다. 믿기 어렵다면 실행하지 마세요. 믿는다면 <b>추가 정보 → 실행</b>. 위 해시와 같은지 <code>Get-FileHash Obol.exe</code> 로 확인할 수도 있습니다.</li>
     <li>보관함·판매 현황을 쓰려면 설정 탭에서 내 계정 이름(예: 이름#1234)을 한 번 입력하세요.</li>
-    <li>POE2 를 켜면 Obol 이 자동으로 켜지게 설정되어 있습니다(설정에서 끌 수 있음).</li>
+    <li>POE2 를 켜면 Obol 이 자동으로 켜집니다(설정에서 끌 수 있음). 창 모드 또는 전체 창 모드에서 쓰세요(독점 전체 화면에서는 창이 안 보입니다).</li>
   </ul>
+
+  <h2>자주 묻는 질문</h2>
+  <details><summary>계정이 정지되지 않나요?</summary><p>안전하다고 말씀드릴 수 없습니다. 위의 안내처럼 게임 파일·메모리를 건드리지 않고 키는 복사 한 번만 보내지만, 허용 여부는 확인되지 않았습니다. 판단은 본인 몫입니다.</p></details>
+  <details><summary>'271초 대기'가 뜨는데요?</summary><p>카카오 거래소 호출 한도가 IP별이라 연속 조회하면 걸립니다. Obol 은 한도 직전에 멈추고 남은 시간을 알려 줍니다. 조회 간격을 두세요.</p></details>
+  <details><summary>시세가 이상해요 / 안 읽혀요</summary><p>시세는 등록가라 장난 매물이 섞입니다(편차 경고가 뜹니다). 안 읽히면 관리자 권한 허용 여부와 전체 화면 독점 여부를 먼저 확인하고, 불편사항 보내기로 알려 주세요.</p></details>
+  <details><summary>Exiled Exchange 2 와 뭐가 다른가요?</summary><p>Exiled Exchange 2 도 한국어를 지원합니다. 둘 다 써 보고 편한 쪽을 쓰세요. Obol 은 한글 화면으로 시세·가상 제작·빌드 비교·필터 커스텀을 한 곳에 묶었다는 점이 다릅니다.</p></details>
+  <details><summary>소스는 공개하나요? 어디에 접속하나요?</summary><p>소스는 공개하지 않습니다. 접속처는 카카오 거래소, poe.ninja, poe2db, GitHub(업데이트 확인)이며, '불편사항 보내기'를 누를 때만 그 글을 개발자에게 전송합니다. 채팅 단축키(F5 등)를 설정하면 그 키에서 <code>/명령어</code> 한 줄을 입력합니다.</p></details>
+  <details><summary>돈을 받나요?</summary><p>무료이고 기능 제한이 없습니다. 후원은 도구 안의 ☕ 따뜻한 커피 한 잔에서 자유롭게 하실 수 있습니다.</p></details>
 
   <h2>링크</h2>
   <ul>
-    <li><a href="https://github.com/paylupin84/obol/releases/latest">최신 버전 페이지</a></li>
-    <li><a href="https://github.com/paylupin84/obol">GitHub 저장소</a></li>
+    <li><a href="https://github.com/paylupin84/obol/releases/latest">최신 버전과 업데이트 내역</a></li>
   </ul>
 
-  <footer>Obol 은 비공식 팬 도구이며 Grinding Gear Games, 카카오게임즈와 관계가 없습니다. 제작 시뮬레이터 데이터: <a href="https://poe2db.tw">poe2db.tw</a> (CC BY-NC-SA 3.0), 화폐 시세: <a href="https://poe.ninja">poe.ninja</a>. 후원은 도구 안의 ☕ 따뜻한 커피 한 잔에서 가능합니다(모든 기능은 무료).</footer>
+  <footer>Obol 은 비공식 팬 도구이며 Grinding Gear Games, 카카오게임즈와 제휴·후원 관계가 아닙니다. 접두·접미·액체 감정 데이터: <a href="https://poe2db.tw">poe2db.tw</a> (CC BY-NC-SA 3.0), 화폐 시세: <a href="https://poe.ninja">poe.ninja</a>.</footer>
 </div>
 </body>
 </html>

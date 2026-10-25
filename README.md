@@ -26,6 +26,8 @@ Path of Exile 2 (카카오게임즈) 한글 전용 **시세 · 보관함 · 제�
 | `Alt+F` | **필터 커스텀** — 루트 필터에 강조·소리를 추가 |
 | `F5` | 게임 안에서 채팅 명령 `/은신처` (설정에서 바꿀 수 있음, 게임 창이 맨 앞일 때만) |
 
+0.9.8 에서 추가: 장비·주얼을 끼웠을 때 DPS·방어 변화를 PoB 계산 엔진으로 보여 주는 **정밀 계산**(PoB 설치 불필요), 비슷한 매물로 **적정가 추천**(추천일 뿐, 등록가 기준), 죽었을 때 **원인 추정**, 게임 종료 요약.
+
 그 밖에 스킨 4종 + 직접 만드는 스킨, 게임을 켜면 자동 실행(설정에서 끌 수 있음), 도구 안 **불편사항** 탭이 있습니다.
 
 ![스킨 고르기](docs/skins.png)
@@ -52,3 +54,4 @@ Path of Exile 2 (카카오게임즈) 한글 전용 **시세 · 보관함 · 제�
 - Obol 은 비공식 팬 도구이며 Grinding Gear Games, 카카오게임즈와 관계가 없습니다.
 - 제작 시뮬레이터의 접두·접미 데이터: [poe2db.tw](https://poe2db.tw) (CC BY-NC-SA 3.0)
 - 화폐 시세: [poe.ninja](https://poe.ninja)
+- 정밀 계산: [Path of Building Community (PoE2)](https://github.com/PathOfBuildingCommunity/PathOfBuilding-PoE2)의 계산 모듈(MIT), 한글→영어 변환: [seominugi/poe-kr-en-dictionary](https://github.com/seominugi/poe-kr-en-dictionary)(MIT)

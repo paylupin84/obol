@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Obol (오볼) — 카카오 POE2 한글 시세 조회기</title>
-<meta name="description" content="카카오게임즈 Path of Exile 2 서버용 한글 시세 조회기. 아이템에 마우스를 올리고 Alt+D.">
+<title>Obol (오볼) — POE2 price check for Kakao (Korea) and Global servers · POE2 시세 조회기</title>
+<meta name="description" content="카카오게임즈 Path of Exile 2 서버용 한글 시세 조회기. 아이템에 마우스를 올리고 Alt+D. Price checker for Path of Exile 2 on the Kakao Games (Korea) server. UI in English / 日本語 / 中文.">
 <meta property="og:title" content="Obol (오볼)">
 <meta property="og:description" content="아이템에 마우스를 올리고 Alt+D — 한글 그대로 카카오 거래소 시세. 무료, exe 하나.">
 <meta property="og:image" content="home.png">
@@ -28,17 +28,25 @@ ul{padding-left:20px;margin:0}li{margin:6px 0}
 a{color:var(--gold)}
 details{border-top:1px solid var(--line);padding:10px 0}summary{cursor:pointer;color:var(--gold);font-weight:700}details p{margin:8px 0 0;color:var(--fg)}.warn{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:12px 14px;font-size:14px;margin:26px 0 0}.hash{font-family:Consolas,monospace;font-size:12px;color:var(--dim);word-break:break-all;margin-top:6px}footer{margin-top:44px;font-size:12px;color:var(--dim);border-top:1px solid var(--line);padding-top:16px}
 @media(max-width:560px){h1{font-size:32px}.dl{display:block;text-align:center}}
+
+.langs{margin:0 0 18px;font-size:14px;color:var(--dim)}
+.langs a{text-decoration:none;color:var(--dim);padding:2px 4px}
+.langs a.on{color:var(--gold);font-weight:700;border-bottom:1px solid var(--gold)}
+.l{display:none}
+body[data-lang=ko] .l-ko,body[data-lang=en] .l-en,body[data-lang=ja] .l-ja,body[data-lang=zh] .l-zh{display:block}
 </style>
 </head>
-<body>
+<body data-lang="ko">
 <div class="wrap">
   <h1>Obol <span style="font-size:22px;color:var(--dim)">오볼</span></h1>
+  <p class="langs"><a href="#ko" data-l="ko">한국어</a> · <a href="#en" data-l="en">English</a> · <a href="#ja" data-l="ja">日本語</a> · <a href="#zh" data-l="zh">中文</a></p>
+<div class="l l-ko">
   <p class="sub">카카오 POE2를 위한 한글 시세 조회기 — 아이템에 마우스를 올리고 <b>Alt+D</b></p>
-  <p class="note">Korean (Kakao Games) server only. This tool does not support the global servers.</p>
+  <p class="note">한국 서버(카카오)와 글로벌 서버(pathofexile.com) 시세 조회를 지원합니다. 글로벌은 이번이 첫 지원이라 실제 영어 클라이언트에서의 확인이 부족합니다 — 안 되는 점은 불편사항으로 알려 주세요.</p>
 
   <a class="dl" href="https://github.com/paylupin84/obol/releases/latest/download/Obol.exe">Obol 다운로드 (Windows)</a>
   <span class="small">exe 파일 하나 · 설치 필요 없음 · 무료 · 항상 최신 버전이 받아집니다</span>
-  <div class="hash">SHA-256 (v0.9.12): 2820fa7ca733fbd1f820257e3b17189bf6b080d82edfb9bfa819648b34a63f79</div>
+  <div class="hash">SHA-256 (v0.9.13): 430e43539405dff3ea9e482bba119fcd03e2f2885a010504e592bc22bc563742</div>
 
   <img class="shot" src="price.png" alt="Alt+D 시세 조회 화면: 매물 가격 목록과 마우스를 올린 매물의 옵션">
   <span class="small" style="margin-top:0">Alt+D 시세 조회 — 매물 줄에 마우스를 올리면 오른쪽에 그 아이템의 옵션이 뜹니다(판매자 이름은 가렸습니다).</span>
@@ -86,5 +94,193 @@ details{border-top:1px solid var(--line);padding:10px 0}summary{cursor:pointer;c
 
   <footer>Obol 은 비공식 팬 도구이며 Grinding Gear Games, 카카오게임즈와 제휴·후원 관계가 아닙니다. 접두·접미·액체 감정 데이터: <a href="https://poe2db.tw">poe2db.tw</a> (CC BY-NC-SA 3.0), 화폐 시세: <a href="https://poe.ninja">poe.ninja</a>. 화면의 그림 띠 이미지는 AI(Google Flow)로 만들었습니다.</footer>
 </div>
+<div class="l l-en" lang="en">
+  <p class="sub">A price checker for Path of Exile 2 on the Kakao Games (Korea) server — hover an item and press <b>Alt+D</b></p>
+  <p class="note">The current release supports both the <b>Korean (Kakao Games) server</b> and the <b>Global server (pathofexile.com)</b> for price checks (choose in Settings → Game server, then restart). Global support is new and not yet verified against every item text of the English client — please report anything that fails from the feedback tab. Stash, sales and My shop work with Kakao accounts only. Obol's own screens can be shown in English, Japanese or Chinese (Settings → Language), but item, skill and area names are shown with the game's English names. This page is machine-translated from Korean and has not been reviewed by a native speaker. If something reads wrong, the Korean text is the original.</p>
+
+  <a class="dl" href="https://github.com/paylupin84/obol/releases/latest/download/Obol.exe">Download Obol (Windows)</a>
+  <span class="small">One exe · no installer · free · always downloads the latest version</span>
+  <div class="hash">SHA-256 (v0.9.13): 430e43539405dff3ea9e482bba119fcd03e2f2885a010504e592bc22bc563742</div>
+
+  <img class="shot" src="price.png" alt="Alt+D price check: a list of listings, with the mods of the hovered listing on the right">
+  <span class="small" style="margin-top:0">Alt+D price check — hover a listing to see its mods on the right (seller names are blurred).</span>
+
+  <h2>What it does</h2>
+  <table>
+    <tr><td>Alt+D</td><td><b>Price check.</b> Hover an item in game and press it: prices of similar listings on the Kakao trade site appear over the game. Hover a row to see that listing's mods; click it to compare side by side with your item. Rare and unique gear also gets a one-line <b>"fair price" suggestion</b> from similar listings (a suggestion only, based on asking prices — set your own price).</td></tr>
+    <tr><td>Alt+C</td><td>Crafting simulator — roll prefixes and suffixes by weight, click orb icons to try crafting, and look up market prices for similar items to what you made.</td></tr>
+    <tr><td>Alt+B</td><td>Build lab — compare popular builds (PoB code, pobb.in or poe.ninja link) with your own, pick mods to aim for, and continue into price lookup and crafting. Also finds Liquid Emotions. DPS and defence changes from equipping jewels or gear are calculated with the <b>PoB calculation engine</b> (no PoB install needed; a one-time ~5 MB download).</td></tr>
+    <tr><td>Alt+M / N</td><td>Stash status (total value of your listings, per-listing "fair price check") and sales status (exact sale times and prices).</td></tr>
+    <tr><td>Home</td><td>Today's play, the current town and remaining quests, price favourites, weekly top risers and fallers, and PC status at a glance.</td></tr>
+    <tr><td>Quests</td><td><b>Town and area quest guide.</b> When you enter a new town or area, small text over the game shows what to do there, the rewards and where to go next (required · ★ recommended · optional). It stays until you press ✕, and quests you tick off are skipped next time. Reward numbers come from public external sources and have not been verified on the Kakao server.</td></tr>
+    <tr><td>PC status</td><td>Live CPU, memory, GPU and VRAM figures, a PoE2 memory warning, and a memory cleaner that closes only the programs you tick (essential processes are never closed). When you hide or minimise the Obol window it turns into an always-on-top <b>mini bar</b>.</td></tr>
+    <tr><td>And more</td><td>Replay of the moments before you died with a <b>cause estimate</b>, a daily summary when you quit the game, an idle screen, filter customiser (Alt+F), skins, and a way to send feedback.</td></tr>
+  </table>
+
+  <img class="shot" src="home.png" alt="Obol home screen" style="margin-top:26px">
+  <img class="shot" src="craft.png" alt="Crafting simulator: orb icon buttons and an item card" style="margin-top:14px">
+  <span class="small" style="margin-top:0">Crafting simulator — click orbs to try crafting; the number of uses stacks on each icon.</span>
+
+  <p class="warn"><b>Please read.</b> Obol is an unofficial fan tool. It only sends the item-copy key (Ctrl+C) to the game and does not read or modify game files or memory, but we have no confirmation that Grinding Gear Games or Kakao Games allow it. <b>We do not guarantee account safety; use is at your own risk.</b></p>
+
+  <h2>First launch</h2>
+  <ul>
+    <li>The game runs as administrator, so Obol also shows an <b>administrator permission prompt</b>. Please choose "Yes".</li>
+    <li>Windows may show an "Unknown publisher" warning, because this is an unsigned personal program. If you do not trust it, do not run it. If you do, choose <b>More info → Run anyway</b>. You can also check that the file matches the hash above with <code>Get-FileHash Obol.exe</code>.</li>
+    <li>To use Stash and Sales status, enter your account name (e.g. Name#1234) once in the Settings tab.</li>
+    <li>Obol starts automatically when you launch POE2 (you can turn this off in Settings). Use windowed or borderless-window mode; exclusive fullscreen hides its windows.</li>
+  </ul>
+
+  <h2>FAQ</h2>
+  <details><summary>Could my account be banned?</summary><p>We cannot say it is safe. As described above, Obol does not touch game files or memory and sends only a single copy keystroke, but whether it is allowed has not been confirmed. The decision is yours.</p></details>
+  <details><summary>It shows a "wait 271 seconds" message?</summary><p>The Kakao trade site rate-limits per IP, so repeated lookups hit the limit. Obol stops just before the limit and tells you how long to wait. Leave a gap between lookups.</p></details>
+  <details><summary>Prices look wrong / the item is not read</summary><p>Prices are asking prices, so troll listings get mixed in (a spread warning appears). If an item is not read, first check that you allowed administrator permission and that the game is not in exclusive fullscreen, then tell us via "Send feedback".</p></details>
+  <details><summary>Is the source code public? What does it connect to?</summary><p>The source is not public. It connects to the Kakao trade site, poe.ninja, poe2db and GitHub (update check and the precise-calculation bundle), and sends text to the developer only when you press "Send feedback". If you set chat hotkeys (e.g. F5), that key types a single <code>/command</code> line.</p></details>
+  <details><summary>Does it record my screen?</summary><p>If you turn on "replay before death", it keeps the last 12 seconds in <b>memory only</b>, scaled down and only while the game window is in front (nothing is written to disk or sent anywhere). When you die it shows that moment in a small window, and saves a file only if you press "Save". It does not read game files or memory, and you can turn it off in Settings. The after-death "cause estimate" looks at ① the 60 seconds before death in the log file the game writes itself and ② the life/shield numbers at the lower left of the screen read with Windows' built-in text recognition. It is an <b>estimate</b>, not the real cause, which the game does not record.</p></details>
+  <details><summary>Do I need PoB installed for "precise calculation"?</summary><p>No. Obol downloads a ~5 MB bundle containing only the calculation modules of Path of Building (PoE2) (MIT licence) from GitHub once and runs it itself. It works from your build loaded through a poe.ninja character link; poe.ninja data is not real-time, so the update time is shown. Lines it cannot calculate are marked "cannot calculate", and results can differ from real in-game DPS.</p></details>
+  <details><summary>Are PC status and memory cleaning safe?</summary><p>The figures are read-only (no administrator rights needed). "Memory cleaning" closes only the programs you tick, after a confirmation window shows what will be closed. Essential Windows processes and Obol itself never appear in the list, and anything flagged with a caution (editors, Claude, etc.) is closed only if you accept the warning. Unsaved work can be lost, so please read the confirmation.</p></details>
+  <details><summary>Does it cost money?</summary><p>It is free with no feature limits. If you wish, you can support it with ☕ "a warm cup of coffee" inside the tool.</p></details>
+
+  <h2>Links</h2>
+  <ul>
+    <li><a href="https://github.com/paylupin84/obol/releases/latest">Latest version and release notes</a></li>
+  </ul>
+
+  <footer>Obol is an unofficial fan tool and is not affiliated with or endorsed by Grinding Gear Games or Kakao Games. Affix and Liquid Emotion data: <a href="https://poe2db.tw">poe2db.tw</a> (CC BY-NC-SA 3.0); currency prices: <a href="https://poe.ninja">poe.ninja</a>. The banner images in the app were made with AI (Google Flow).</footer>
+</div>
+<div class="l l-ja" lang="ja">
+  <p class="sub">カカオゲームズ版 Path of Exile 2 向けの相場チェッカー — アイテムにマウスを乗せて <b>Alt+D</b></p>
+  <p class="note">現在のバージョンは相場検索で<b>韓国(カカオゲームズ)サーバー</b>と<b>グローバルサーバー(pathofexile.com)</b>の両方に対応しています(設定 → ゲームサーバーで選択し、再起動)。グローバル対応は初版で、英語クライアントのすべてのアイテム文での確認はできていません。読み取れない場合はご意見タブでお知らせください。保管庫・販売状況・マイショップはカカオアカウント専用です。Obol の画面自体は英語・日本語・中国語で表示できます(設定 → 言語)が、アイテム・スキル・エリア名はゲーム内の英語名で表示されます。このページは韓国語から機械翻訳したもので、ネイティブによる確認は受けていません。不自然な点があれば韓国語の原文が正です。</p>
+
+  <a class="dl" href="https://github.com/paylupin84/obol/releases/latest/download/Obol.exe">Obol をダウンロード (Windows)</a>
+  <span class="small">exe ファイル1つ · インストール不要 · 無料 · 常に最新版がダウンロードされます</span>
+  <div class="hash">SHA-256 (v0.9.13): 430e43539405dff3ea9e482bba119fcd03e2f2885a010504e592bc22bc563742</div>
+
+  <img class="shot" src="price.png" alt="Alt+D 相場チェック: 出品の価格一覧と、マウスを乗せた出品のオプション">
+  <span class="small" style="margin-top:0">Alt+D 相場チェック — 出品の行にマウスを乗せると右側にそのアイテムのオプションが表示されます(販売者名は隠しています)。</span>
+
+  <h2>できること</h2>
+  <table>
+    <tr><td>Alt+D</td><td><b>相場チェック。</b>ゲーム内でアイテムにマウスを乗せて押すと、カカオのトレードサイトにある似た出品の価格がゲーム画面の上に表示されます。行にマウスを乗せるとその出品のオプション、クリックすると自分のアイテムと並べて比較します。レア・ユニーク装備には、似た出品から<b>「適正価格」の推奨</b>が1行付きます(あくまで推奨で、出品価格が基準です — 価格はご自身で決めてください)。</td></tr>
+    <tr><td>Alt+C</td><td>クラフトシミュレーター — 接頭辞・接尾辞を重み通りに抽選し、オーブのアイコンを押してクラフトを試し、作ったアイテムに似た出品の相場まで確認できます。</td></tr>
+    <tr><td>Alt+B</td><td>ビルドラボ — PoB コード・pobb.in・poe.ninja のリンクにある有名ビルドを自分のビルドと比較し、狙うオプションを選んで相場・クラフトにつなげます。Liquid Emotions の検索もあります。ジュエルや装備を着けた時の DPS・防御の変化は <b>PoB 計算エンジン</b>で計算します(PoB のインストール不要、初回のみ約5MBをダウンロード)。</td></tr>
+    <tr><td>Alt+M / N</td><td>保管庫の状況(出品の総価値、出品ごとの「適正価格チェック」)、販売状況(正確な販売時刻・価格)</td></tr>
+    <tr><td>ホーム</td><td>今日のプレイ、今いる町と残りのクエスト、相場のお気に入り、1週間の上昇・下落ランキング、PC の状態が一目で分かります。</td></tr>
+    <tr><td>クエスト</td><td><b>町・エリアのクエスト案内。</b>新しい町やエリアに入ると、そこでやること・報酬・次の移動をゲーム画面上の小さな文字で表示します(必須 · ★おすすめ · 任意)。✕を押すまで消えず、終えたクエストにチェックを入れると次回から表示されません。報酬の数値は外部の公開資料に基づいており、カカオサーバーでは確認できていません。</td></tr>
+    <tr><td>PC の状態</td><td>CPU・メモリ・GPU・VRAM のリアルタイム数値と PoE2 のメモリ警告、チェックしたプログラムだけを閉じるメモリ整理(必須プロセスは絶対に閉じません)。Obol のウィンドウを隠す・最小化すると、常に手前に出る<b>小さな表示バー</b>に切り替わります。</td></tr>
+    <tr><td>その他</td><td>死亡直前の場面の再生と<b>原因の推定</b>、ゲーム終了時の今日のまとめ、離席時の待機画面、フィルターカスタム(Alt+F)、スキン、フィードバック送信</td></tr>
+  </table>
+
+  <img class="shot" src="home.png" alt="Obol のホーム画面" style="margin-top:26px">
+  <img class="shot" src="craft.png" alt="クラフトシミュレーター: オーブのアイコンボタンとアイテムカード" style="margin-top:14px">
+  <span class="small" style="margin-top:0">クラフトシミュレーター — オーブを押してクラフトを試します。使った回数がアイコンの上に積み上がります。</span>
+
+  <p class="warn"><b>必ずお読みください。</b>Obol は非公式のファンツールです。ゲームにはアイテムコピーキー(Ctrl+C)だけを送り、ゲームのファイルやメモリは読み取りも変更もしませんが、Grinding Gear Games やカカオゲームズが許可しているという確認は得られていません。<b>アカウントの安全は保証できず、使用は自己責任です。</b></p>
+
+  <h2>初回起動時</h2>
+  <ul>
+    <li>ゲームが管理者権限で動くため、Obol も<b>管理者権限の確認画面</b>を出します。「はい」を押してください。</li>
+    <li>Windows が「不明な発行元」という警告を出すことがあります。署名のない個人制作のプログラムだからです。信頼できない場合は実行しないでください。信頼する場合は<b>詳細情報 → 実行</b>。上のハッシュと同じかどうかは <code>Get-FileHash Obol.exe</code> でも確認できます。</li>
+    <li>保管庫・販売状況を使うには、設定タブで自分のアカウント名(例: 名前#1234)を一度入力してください。</li>
+    <li>POE2 を起動すると Obol が自動で起動します(設定で切れます)。ウィンドウモードまたはボーダーレスウィンドウでお使いください(排他的フルスクリーンでは画面が表示されません)。</li>
+  </ul>
+
+  <h2>よくある質問</h2>
+  <details><summary>アカウントが停止されませんか?</summary><p>安全とは言えません。上記のとおりゲームのファイルやメモリには触れず、キーもコピーを1回送るだけですが、許可されているかどうかは確認できていません。判断はご自身でお願いします。</p></details>
+  <details><summary>「271秒待機」と表示されます</summary><p>カカオのトレードサイトの呼び出し上限は IP ごとなので、続けて検索すると引っかかります。Obol は上限の直前で止まり、残り時間を表示します。検索の間隔を空けてください。</p></details>
+  <details><summary>相場がおかしい / 読み取れない</summary><p>相場は出品価格なので、いたずらの出品が混ざります(ばらつきの警告が出ます)。読み取れない場合は、まず管理者権限の許可と排他的フルスクリーンでないことを確認し、「フィードバック送信」でお知らせください。</p></details>
+  <details><summary>ソースは公開していますか? どこに接続しますか?</summary><p>ソースは公開していません。接続先はカカオのトレードサイト、poe.ninja、poe2db、GitHub(更新確認と精密計算パックのダウンロード)で、「フィードバック送信」を押したときだけその文章を開発者に送ります。チャットのショートカット(F5 など)を設定すると、そのキーで <code>/コマンド</code> を1行入力します。</p></details>
+  <details><summary>画面を録画しますか?</summary><p>「死亡直前の場面を見る」をオンにすると、ゲームウィンドウが最前面のときだけ画面を小さく縮小して直近12秒を<b>メモリ上にだけ</b>保持します(ディスクへの書き込みも外部への送信もありません)。死亡時にその場面を小さなウィンドウで表示し、「保存」を押したときだけファイルに残します。ゲームのファイルやメモリは読み取らず、設定タブで切れます。死亡後の「原因の推定」は、① ゲーム自身が書くログファイルの死亡直前60秒、② 画面左下の生命力・シールドの数値を Windows 標準の文字認識で読み取った値、を見ます。ゲームが記録しない「本当の原因」ではなく<b>推定</b>です。</p></details>
+  <details><summary>「精密計算」を使うには PoB をインストールする必要がありますか?</summary><p>いいえ。Path of Building(PoE2)の計算モジュール(MIT ライセンス)だけを抜き出した約5MBのパックを初回に一度 GitHub からダウンロードし、Obol が自分で実行します。poe.ninja のキャラクターリンクで読み込んだ自分のビルドが基準で、poe.ninja のデータはリアルタイムではないため更新時刻を併せて表示します。計算できない行は「計算不可」とし、実際の DPS とは異なる場合があります。</p></details>
+  <details><summary>PC の状態・メモリ整理は安全ですか?</summary><p>数値は読み取るだけです(管理者権限は不要)。「メモリ整理」は、チェックしたプログラムだけを、何が閉じられるかを示す確認画面を経てから閉じます。Windows の必須プロセスと Obol 自身は一覧に出ず、エディタや Claude など注意表示が付くものは警告に同意した場合だけ閉じます。保存していない作業は失われることがあるので、確認画面をよく読んでください。</p></details>
+  <details><summary>お金はかかりますか?</summary><p>無料で、機能制限もありません。ご支援は、ツール内の ☕「温かいコーヒー一杯」から自由にしていただけます。</p></details>
+
+  <h2>リンク</h2>
+  <ul>
+    <li><a href="https://github.com/paylupin84/obol/releases/latest">最新バージョンと更新履歴</a></li>
+  </ul>
+
+  <footer>Obol は非公式のファンツールで、Grinding Gear Games およびカカオゲームズとは提携・後援の関係にありません。接頭辞・接尾辞・Liquid Emotions のデータ: <a href="https://poe2db.tw">poe2db.tw</a> (CC BY-NC-SA 3.0)、通貨相場: <a href="https://poe.ninja">poe.ninja</a>。画面の帯画像は AI(Google Flow)で作成しました。</footer>
+</div>
+<div class="l l-zh" lang="zh">
+  <p class="sub">面向 Kakao Games(韩服)的 Path of Exile 2 价格查询工具 — 把鼠标放在物品上按 <b>Alt+D</b></p>
+  <p class="note">当前版本的价格查询同时支持<b>韩服(Kakao Games)</b>和<b>国际服(pathofexile.com)</b>(在设置 → 游戏服务器中选择并重启)。国际服支持是首个版本,尚未对英文客户端的所有物品文本做过验证,如有无法识别的情况请通过反馈页告知。仓库、销售状况和我的商店仅限 Kakao 账号。Obol 自身的界面可以显示为英语、日语或中文(设置 → 语言),但物品、技能和地区名称会以游戏内的英文原名显示。本页由韩语机器翻译而成,未经母语者审校。如有出入,以韩语原文为准。</p>
+
+  <a class="dl" href="https://github.com/paylupin84/obol/releases/latest/download/Obol.exe">下载 Obol (Windows)</a>
+  <span class="small">仅一个 exe 文件 · 无需安装 · 免费 · 始终下载最新版本</span>
+  <div class="hash">SHA-256 (v0.9.13): 430e43539405dff3ea9e482bba119fcd03e2f2885a010504e592bc22bc563742</div>
+
+  <img class="shot" src="price.png" alt="Alt+D 价格查询:挂牌价格列表,右侧为鼠标所指挂牌的词缀">
+  <span class="small" style="margin-top:0">Alt+D 价格查询 — 把鼠标放在某一行挂牌上,右侧会显示该物品的词缀(已隐藏卖家名称)。</span>
+
+  <h2>功能介绍</h2>
+  <table>
+    <tr><td>Alt+D</td><td><b>价格查询。</b>在游戏中把鼠标放在物品上按下,Kakao 交易网站上类似挂牌的价格会显示在游戏画面上。鼠标放在某一行上可看到该挂牌的词缀,点击则与自己的物品并排对比。稀有和传奇装备还会根据类似挂牌给出一行<b>“合理价格”建议</b>(仅为建议,以挂牌价为准 — 价格请自行决定)。</td></tr>
+    <tr><td>Alt+C</td><td>打造模拟器 — 按权重抽取前缀和后缀,点击点金石图标试着打造,还能查看与所打造物品类似的物品的市场价格。</td></tr>
+    <tr><td>Alt+B</td><td>构筑实验室 — 将 PoB 代码、pobb.in 或 poe.ninja 链接中的热门构筑与自己的构筑对比,选择想要的词缀并衔接到价格查询和打造。也可查找 Liquid Emotions。装备珠宝或装备后的 DPS 和防御变化由 <b>PoB 计算引擎</b>计算(无需安装 PoB,首次需下载约 5MB)。</td></tr>
+    <tr><td>Alt+M / N</td><td>仓库状况(挂牌总价值、逐件“合理价格检查”)和销售状况(精确的售出时间与价格)</td></tr>
+    <tr><td>主页</td><td>今日游戏情况、当前城镇与剩余任务、价格收藏、一周涨跌榜以及电脑状态,一目了然。</td></tr>
+    <tr><td>任务</td><td><b>城镇与地区任务指引。</b>进入新的城镇或地区时,会以游戏画面上的小字显示在那里要做的事、奖励和下一步去向(必做 · ★推荐 · 可选)。点击 ✕ 之前不会消失,勾选完成的任务下次会被省略。奖励数值基于外部公开资料,未在 Kakao 服务器上验证。</td></tr>
+    <tr><td>电脑状态</td><td>实时显示 CPU、内存、GPU、显存数值和 PoE2 内存警告,以及只关闭您勾选程序的内存清理(绝不会关闭系统必需进程)。隐藏或最小化 Obol 窗口时,会变成始终置顶的<b>小型状态栏</b>。</td></tr>
+    <tr><td>其他</td><td>回放死亡前的画面并给出<b>原因推测</b>、退出游戏时的当日总结、挂机待机画面、过滤器定制(Alt+F)、皮肤、发送反馈</td></tr>
+  </table>
+
+  <img class="shot" src="home.png" alt="Obol 主页" style="margin-top:26px">
+  <img class="shot" src="craft.png" alt="打造模拟器:点金石图标按钮和物品卡片" style="margin-top:14px">
+  <span class="small" style="margin-top:0">打造模拟器 — 点击点金石试着打造,使用次数会累计显示在图标上方。</span>
+
+  <p class="warn"><b>请务必阅读。</b>Obol 是非官方的粉丝工具。它只向游戏发送物品复制键(Ctrl+C),不读取也不修改游戏文件或内存,但我们没有得到 Grinding Gear Games 或 Kakao Games 允许使用的确认。<b>我们不保证账号安全,使用风险自负。</b></p>
+
+  <h2>首次启动</h2>
+  <ul>
+    <li>游戏以管理员权限运行,因此 Obol 也会弹出<b>管理员权限确认窗口</b>。请选择“是”。</li>
+    <li>Windows 可能显示“未知发布者”警告,因为这是未签名的个人制作程序。如果不信任,请不要运行;如果信任,请选择<b>更多信息 → 仍要运行</b>。您也可以用 <code>Get-FileHash Obol.exe</code> 检查文件是否与上面的哈希一致。</li>
+    <li>要使用仓库和销售状况,请在设置标签页中输入一次您的账号名称(例如 名称#1234)。</li>
+    <li>启动 POE2 时 Obol 会自动启动(可在设置中关闭)。请在窗口模式或无边框窗口模式下使用(独占全屏时窗口不会显示)。</li>
+  </ul>
+
+  <h2>常见问题</h2>
+  <details><summary>账号会被封停吗?</summary><p>我们不能说它是安全的。如上所述,它不接触游戏文件和内存,只发送一次复制按键,但是否被允许尚未得到确认。请自行判断。</p></details>
+  <details><summary>出现“等待 271 秒”是怎么回事?</summary><p>Kakao 交易网站的调用上限按 IP 计算,连续查询就会触发。Obol 会在达到上限之前停下,并告诉您还需等待多久。请在查询之间留出间隔。</p></details>
+  <details><summary>价格不对 / 读取不到物品</summary><p>价格是挂牌价,所以会混入恶搞挂牌(会出现差异警告)。如果读取不到,请先确认已允许管理员权限且游戏不是独占全屏,然后通过“发送反馈”告诉我们。</p></details>
+  <details><summary>源代码公开吗?会连接哪些地方?</summary><p>源代码不公开。连接的地方有 Kakao 交易网站、poe.ninja、poe2db 和 GitHub(检查更新、下载精确计算包),只有在您点击“发送反馈”时才会把文字发送给开发者。如果设置了聊天快捷键(如 F5),该键会输入一行 <code>/命令</code>。</p></details>
+  <details><summary>会录制屏幕吗?</summary><p>开启“查看死亡前画面”后,仅在游戏窗口位于最前面时,把画面缩小并将最近 12 秒<b>只保存在内存中</b>(不写入磁盘,也不发送到外部)。死亡时会在小窗口中显示那一刻的画面,只有在您点击“保存”时才会保存为文件。它不读取游戏文件和内存,可在设置中关闭。死亡后的“原因推测”会查看 ① 游戏自己写入的日志文件中死亡前 60 秒的内容,② 用 Windows 内置文字识别读取的屏幕左下角生命/护盾数值。这只是<b>推测</b>,并非游戏没有记录的真正原因。</p></details>
+  <details><summary>使用“精确计算”需要安装 PoB 吗?</summary><p>不需要。Obol 只会在首次使用时从 GitHub 下载一个约 5MB、仅含 Path of Building(PoE2)计算模块(MIT 许可证)的包,并自行运行。它基于通过 poe.ninja 角色链接载入的您的构筑;poe.ninja 数据并非实时,所以会同时显示更新时间。无法计算的行会标注“无法计算”,结果可能与游戏内实际 DPS 不同。</p></details>
+  <details><summary>电脑状态和内存清理安全吗?</summary><p>数值仅为读取(无需管理员权限)。“内存清理”只会关闭您勾选的程序,并且会先弹出确认窗口显示将关闭什么。Windows 必需进程和 Obol 自身不会出现在列表中,带有注意标记的程序(编辑器、Claude 等)只有在您接受警告后才会关闭。未保存的工作可能丢失,请仔细阅读确认窗口。</p></details>
+  <details><summary>收费吗?</summary><p>免费,没有功能限制。如果您愿意,可以通过工具内的 ☕“一杯温暖的咖啡”自由赞助。</p></details>
+
+  <h2>链接</h2>
+  <ul>
+    <li><a href="https://github.com/paylupin84/obol/releases/latest">最新版本与更新记录</a></li>
+  </ul>
+
+  <footer>Obol 是非官方的粉丝工具,与 Grinding Gear Games 和 Kakao Games 没有关联,也未获其赞助。前缀、后缀和 Liquid Emotions 数据:<a href="https://poe2db.tw">poe2db.tw</a> (CC BY-NC-SA 3.0);通货价格:<a href="https://poe.ninja">poe.ninja</a>。应用内的横幅图片由 AI(Google Flow)制作。</footer>
+</div>
+</div>
+<script>
+(function(){
+  var ok={ko:1,en:1,ja:1,zh:1};
+  function pick(){
+    var h=(location.hash||"").slice(1);
+    if(ok[h])return h;
+    try{var s=localStorage.getItem("obol_lang");if(ok[s])return s}catch(e){}
+    var n=(navigator.language||"ko").toLowerCase();
+    if(n.indexOf("ko")==0)return "ko";
+    if(n.indexOf("ja")==0)return "ja";
+    if(n.indexOf("zh")==0)return "zh";
+    return "en";
+  }
+  function set(l,save){
+    document.body.setAttribute("data-lang",l);
+    document.documentElement.lang=l;
+    var as=document.querySelectorAll(".langs a");
+    for(var i=0;i<as.length;i++)as[i].className=as[i].getAttribute("data-l")==l?"on":"";
+    if(save){try{localStorage.setItem("obol_lang",l)}catch(e){}}
+  }
+  set(pick(),false);
+  var as=document.querySelectorAll(".langs a");
+  for(var i=0;i<as.length;i++)as[i].addEventListener("click",function(e){e.preventDefault();var l=this.getAttribute("data-l");set(l,true);history.replaceState(null,"","#"+l)});
+})();
+</script>
 </body>
 </html>

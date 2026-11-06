@@ -1,6 +1,12 @@
 # Obol (오볼)
 
-> **Korean (Kakao Games) server only.** Obol is a Korean-language price-check / stash / crafting helper for Path of Exile 2 on the Kakao Games (Korea) service. It does not support the global servers.
+> **Korean (Kakao Games) and Global servers (price check).** Obol is a price-check / stash / crafting helper for Path of Exile 2. Choose the server in Settings → Game server and restart. Global (pathofexile.com) support is new and not yet verified against every English-client item text; stash, sales and My shop work with Kakao accounts only. Obol's own screens can be shown in English, Japanese or Chinese (Settings → Language); item, skill and area names appear with the game's English names. Translations are AI-made and not reviewed by native speakers.
+>
+> **한국어 외 안내 / Other languages:** [English · 日本語 · 中文 landing page](https://paylupin84.github.io/obol/) (language links at the top).
+>
+> 日本語: カカオゲームズ版 Path of Exile 2 向けの相場チェッカーです(相場検索は韓国・グローバルサーバー対応。グローバルは初版)。画面は英語・日本語・中国語でも表示できます(AI 翻訳で、ネイティブの確認は受けていません)。
+>
+> 中文:面向 Kakao Games(韩服)的 Path of Exile 2 价格查询工具(价格查询支持韩服和国际服,国际服为首个版本)。界面可显示为英语、日语或中文(AI 翻译,未经母语者审校)。
 
 Path of Exile 2 (카카오게임즈) 한글 전용 **시세 · 보관함 · 제작 · 빌드 비교** 도구입니다.
 
